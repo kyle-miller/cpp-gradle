@@ -1,0 +1,13 @@
+apply plugin: 'cpp'
+
+model {
+  components {
+    main(NativeExecutableSpec)
+  }
+
+  toolChains {
+    visualCpp(VisualCpp) {
+      installDir "C:/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools"
+    }
+  }
+}
